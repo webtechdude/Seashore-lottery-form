@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seashore Lottery Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="heading">
+        <h1 id="title">Seashore Lottery Form</h1>
+        <p id="description">Thank you for your participation in the lottery</p>
+    </div>
+
+    <form action="" id="survey-form">
+
+        <label class="qst_label" id="name-label" for="name">Name: </label>
+        <input required type="text" name="" class="form_element" id="name" placeholder="Enter your name">
+
+        <label class="qst_label" id="email-label" for="email">Email: </label>
+        <input type="email" name="" class="form_element" id="email" placeholder="Enter your email">
+
+        <label required class="qst_label" id="number-label" for="number">Age: </label>
+        <input class="form_element" min="12" max="99" type="number" id="number" class="form_element"
+            placeholder="Enter your age">
+
+
+
+        <!-- select option -->
+        <label class="qst_label" for="dropdown">Color of the lottery card: </label>
+        <select required class="form_element" name="" id="dropdown">
+            <option id="selected" value="" selected disabled hidden>Choose here</option>
+            <option id="pink" value="pink">Pink</option>
+            <option id="yellow" value="yellow">Yellow</option>
+            <option id="lime" value="lime">Lime</option>
+            <option id="blue" value="blue">Blue</option>
+        </select>
+
+        <!-- Radio Buttons -->
+
+        <label class="qst_label" for="">Would you consider buying more lottery tickets for your family members?</label>
+        <label class="radio-checkbox-text"><input id="definitely" name="user-recommend" value="definitely" type="radio"
+                class="input-radio" />Definitely</label>
+
+        <label class="radio-checkbox-text"><input name="user-recommend" value="maybe" type="radio"
+                class="input-radio" />Maybe</label>
+
+        <label class="radio-checkbox-text"><input name="user-recommend" value="not_now" type="radio"
+                class="input-radio" />Not
+            now</label>
+
+
+
+        <!-- Checkbox -->
+        <label class="qst_label" for="">Which of these shoe brands have you heard of?</label>
+        <label class="radio-checkbox-text"><input name="prefer" value="nike" type="checkbox"
+                class="input-checkbox" />Nike</label>
+
+        <label class="radio-checkbox-text">
+            <input name="prefer" value="adidas" type="checkbox" class="input-checkbox" />Adidas</label>
+
+        <label class="radio-checkbox-text"><input name="prefer" value="skechers" type="checkbox"
+                class="input-checkbox" />Skechers</label>
+
+        <label class="radio-checkbox-text"><input name="prefer" value="asics" type="checkbox"
+                class="input-checkbox" />Asics</label>
+
+        <label class="radio-checkbox-text"><input name="prefer" value="gucci" type="checkbox"
+                class="input-checkbox" />Gucci</label>
+
+        <label class="radio-checkbox-text"><input name="prefer" value="aot" type="checkbox"
+                class="input-checkbox" />All of these</label>
+
+        <label class="radio-checkbox-text"><input name="prefer" value="none" type="checkbox"
+                class="input-checkbox" />None</label>
+
+
+        <!-- Textarea -->
+
+        <label for="txt-area" class="qst_label">More info about yourself you want to add:</label>
+        <textarea name="" id="txt-area" cols="30" rows="10" placeholder="Enter your info here..."></textarea>
+
+
+        <!-- Button -->
+        <div class="btn">
+            <input type="submit" value="Submit" id="submit">
+        </div>
+    </form>
+</body>
+
+</html>
